@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { Error, Loader, SongCard } from '../components';
 import { genres } from '../assets/constants';
@@ -6,8 +6,7 @@ import { genres } from '../assets/constants';
 import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 
 const Discover = () => {
-
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 

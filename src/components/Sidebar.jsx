@@ -16,7 +16,7 @@ const NavLinks = () => (
           key={item.name}
           to={item.to}
           className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400
-        hover:text-cyan-400"
+        hover:text-cyan-200"
           onClick={() => handleClick()}
         >
           <item.icon className="w-6 h-6 mr-2" />
@@ -36,7 +36,7 @@ const Sidebar = () => {
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks />
       </div>
-      <div className="absolute md:hidden block top-6 right-3">
+      <div className="absolute md:hidden block top-1 right-2">
         {mobileMenuOpen ? (
           <RiCloseLine onClick={() => setMobileMenuOpen(false)} className="w-6 h-6 text-white mr-2" />
         ) : <HiOutlineMenu onClick={() => setMobileMenuOpen(true)} className="w-6 h-6 text-white mr-2" />}

@@ -38,7 +38,7 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
         <img alt="song_img" src={song.images?.coverart} />
       </div>
       <div className="mt-4 flex flex-col">
-        <p className="font-semibold text-lg  text-white truncate">
+        <p className="font-semibold text-lg  text-white truncate hover:text-green-100">
           <Link to={`/songs/${song?.key}`}>
             {song.title}
           </Link>
